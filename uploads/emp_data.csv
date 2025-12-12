@@ -1,0 +1,11 @@
+employee_id,department,region,education,gender,recruitment_channel,no_of_trainings,age,previous_year_rating,length_of_service,awards_won?,avg_training_score
+10001,Sales & Marketing,South,Bachelor,Male,sourcing,3,31,3.0,4,0,56
+10002,Operations,East,Master,Female,other,2,28,4.0,3,1,78
+10003,Technology,West,Bachelor,Male,sourcing,1,35,3.8,7,1,66
+10004,HR,South,Master,Female,other,3,29,2.5,5,0,45
+10005,Procurement,North,Bachelor,Male,sourcing,4,40,4.2,9,1,82
+10006,Sales & Marketing,East,PhD,Female,other,2,33,3.7,6,0,51
+10007,Technology,South,Bachelor,Male,referral,1,30,4.0,4,1,72
+10008,Finance,West,Master,Female,sourcing,3,41,3.9,10,0,69
+10009,Operations,North,Bachelor,Male,referral,5,45,4.5,12,1,88
+10010,Technology,East,PhD,Female,other,1,27,3.5,2,0,54

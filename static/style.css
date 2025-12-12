@@ -1,0 +1,254 @@
+/* === Global Styles === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #333;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* === Shared Header === */
+.login-header, .dashboard-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #1e1e1e;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-header h1, .dashboard-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-header p, .dashboard-header p {
+    font-size: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444;
+}
+
+/* === Login Container === */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+/* === Login Box === */
+.login-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #1e1e1e;
+}
+
+.login-box p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* === Password Toggle === */
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+}
+
+/* === Login Options === */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.login-options a {
+    text-decoration: none;
+    color: #4a90e2;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+/* === Button === */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #357ac9;
+}
+
+/* === Error Message === */
+.error-msg {
+    background: rgba(255, 0, 0, 0.1);
+    color: #a00;
+    border-left: 4px solid #a00;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* === Dashboard Content === */
+.dashboard-content {
+    max-width: 1000px;
+    margin: 60px auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    color: #2c2c2c;
+}
+
+/* === File Upload === */
+.file-upload {
+    display: none;
+}
+
+.file-upload-label {
+    background-color: #ffffff;
+    color: #444;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload-label:hover {
+    background-color: #f1f1f1;
+}
+
+/* === Animations === */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .login-box, .dashboard-content {
+        padding: 30px;
+    }
+
+    .login-header h1, .dashboard-header h1 {
+        font-size: 22px;
+    }
+
+    .toggle-password {
+        right: 10px;
+    }
+}
+
+
+
+
+/* === Prediction Table Wrapper (Responsive) === */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+    padding-bottom: 20px;
+    border-radius: 12px;
+}
+
+/* === Styled Table === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid rgba(255,255,255,0.4);
+    white-space: nowrap;
+    color: #2c2c2c;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+}
+
+/* === Mobile Fix: Stack table on small screens === */
+@media (max-width: 600px) {
+    th, td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
